@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-service
+spec:
+  selector:
+    app: siva  # ✅ Match this with Deployment Pod labels
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000  # ✅ Match this with Deployment containerPort
+  type: ClusterIP
