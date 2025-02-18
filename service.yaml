@@ -4,9 +4,9 @@ metadata:
   name: flask-service
 spec:
   selector:
-    app: siva  # ✅ Match this with Deployment Pod labels
+    app: siva  # ✅ Ensure this matches the 'labels' in your Deployment spec
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 5000  # ✅ Match this with Deployment containerPort
-  type: ClusterIP
+      targetPort: 5000  # ✅ Ensure this matches the containerPort in Deployment
+  type: ClusterIP
