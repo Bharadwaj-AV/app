@@ -9,4 +9,4 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 5000  # ✅ Ensure this matches the containerPort in Deployment
-  type: NodePort
+  type: LoadBalancer
