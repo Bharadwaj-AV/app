@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: flask-app
-        image: avbharadwaj/bharath:latest
+        image: avbharadwaj/bharat:latest
         ports:
         - containerPort: 5000  # ✅ Match this with Service targetPort
 
