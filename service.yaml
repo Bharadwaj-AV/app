@@ -4,7 +4,7 @@ metadata:
   name: flask-service
 spec:
   selector:
-    app: siva  # ✅ Ensure this matches the 'labels' in your Deployment spec
+    app: Bharath  # ✅ Ensure this matches the 'labels' in your Deployment spec
   ports:
     - protocol: TCP
       port: 80
